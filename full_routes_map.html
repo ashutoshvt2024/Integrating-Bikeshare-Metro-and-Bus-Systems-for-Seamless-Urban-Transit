@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_198e1167e09acc3be3b9d45fd9faa48d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_198e1167e09acc3be3b9d45fd9faa48d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_198e1167e09acc3be3b9d45fd9faa48d = L.map(
+                "map_198e1167e09acc3be3b9d45fd9faa48d",
+                {
+                    center: [38.8984017, -77.2111917],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+
+            
+
+        
+    
+            var tile_layer_ef75a61a75416fe177715a877cd11f0e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ef75a61a75416fe177715a877cd11f0e.addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+            var marker_54e43159e07e87b95fdf5319b9a1ee9d = L.marker(
+                [38.8984017, -77.2111917],
+                {}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+        var popup_462e8c43aff34798fa98e8b611be18b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e464c9355f6a961f53bdf7db1b06469e = $(`<div id="html_e464c9355f6a961f53bdf7db1b06469e" style="width: 100.0%; height: 100.0%;">Start Point</div>`)[0];
+                popup_462e8c43aff34798fa98e8b611be18b6.setContent(html_e464c9355f6a961f53bdf7db1b06469e);
+            
+        
+
+        marker_54e43159e07e87b95fdf5319b9a1ee9d.bindPopup(popup_462e8c43aff34798fa98e8b611be18b6)
+        ;
+
+        
+    
+    
+            var marker_f7089aec206763d10448704e8e0af013 = L.marker(
+                [38.9026187, -77.2037612],
+                {}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+            var icon_1ef3c327d82e3d4b1ddff1cc457935dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f7089aec206763d10448704e8e0af013.setIcon(icon_1ef3c327d82e3d4b1ddff1cc457935dc);
+        
+    
+        var popup_c965057ba98dc588d00787627ebfa6d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e038ada1fad7cba2f505976db39a85f5 = $(`<div id="html_e038ada1fad7cba2f505976db39a85f5" style="width: 100.0%; height: 100.0%;">End Point</div>`)[0];
+                popup_c965057ba98dc588d00787627ebfa6d5.setContent(html_e038ada1fad7cba2f505976db39a85f5);
+            
+        
+
+        marker_f7089aec206763d10448704e8e0af013.bindPopup(popup_c965057ba98dc588d00787627ebfa6d5)
+        ;
+
+        
+    
+    
+            var marker_943f3534b8f79b341c610ebebe8781f7 = L.marker(
+                [38.9, -77.21],
+                {}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+            var icon_544b5073514de337e94166598ba37120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_943f3534b8f79b341c610ebebe8781f7.setIcon(icon_544b5073514de337e94166598ba37120);
+        
+    
+        var popup_c45c12d2cdd327f3348b0ce6b6719ab3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12714667fa871bcc249f31ea5aa09372 = $(`<div id="html_12714667fa871bcc249f31ea5aa09372" style="width: 100.0%; height: 100.0%;">Nearest Start Bike Station</div>`)[0];
+                popup_c45c12d2cdd327f3348b0ce6b6719ab3.setContent(html_12714667fa871bcc249f31ea5aa09372);
+            
+        
+
+        marker_943f3534b8f79b341c610ebebe8781f7.bindPopup(popup_c45c12d2cdd327f3348b0ce6b6719ab3)
+        ;
+
+        
+    
+    
+            var marker_69fdf06ba4534cb6bb923c0af4a35717 = L.marker(
+                [38.900618911, -77.205343485],
+                {}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+            var icon_4832eb9cc035df0ec094ef3288cd1d2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_69fdf06ba4534cb6bb923c0af4a35717.setIcon(icon_4832eb9cc035df0ec094ef3288cd1d2a);
+        
+    
+        var popup_4d0a3fe192cfea32f3aaf8848f1ba40b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c5801538a7c289174ad0f4e68cf26c2 = $(`<div id="html_7c5801538a7c289174ad0f4e68cf26c2" style="width: 100.0%; height: 100.0%;">Nearest End Bike Station</div>`)[0];
+                popup_4d0a3fe192cfea32f3aaf8848f1ba40b.setContent(html_7c5801538a7c289174ad0f4e68cf26c2);
+            
+        
+
+        marker_69fdf06ba4534cb6bb923c0af4a35717.bindPopup(popup_4d0a3fe192cfea32f3aaf8848f1ba40b)
+        ;
+
+        
+    
+    
+            var marker_c0eceef095fe18ab1c2a1bf6af892f85 = L.marker(
+                [38.90078833, -77.18909716],
+                {}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+            var icon_d0ac5c042af4c007ebbd374c8ead22b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c0eceef095fe18ab1c2a1bf6af892f85.setIcon(icon_d0ac5c042af4c007ebbd374c8ead22b3);
+        
+    
+        var popup_d7f9a744068aba4ce689bad31eedc96f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9215b62be443aefdc61b62af3157a9b5 = $(`<div id="html_9215b62be443aefdc61b62af3157a9b5" style="width: 100.0%; height: 100.0%;">Nearest Metro Station</div>`)[0];
+                popup_d7f9a744068aba4ce689bad31eedc96f.setContent(html_9215b62be443aefdc61b62af3157a9b5);
+            
+        
+
+        marker_c0eceef095fe18ab1c2a1bf6af892f85.bindPopup(popup_d7f9a744068aba4ce689bad31eedc96f)
+        ;
+
+        
+    
+    
+            var marker_951cb8e9690370e5e31b28230c01294d = L.marker(
+                [38.903224, -77.203934],
+                {}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+            var icon_0f1e3261ff5c6c944c7d7f0a2fdbe8f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_951cb8e9690370e5e31b28230c01294d.setIcon(icon_0f1e3261ff5c6c944c7d7f0a2fdbe8f6);
+        
+    
+        var popup_c1f44efd0f8d50d79ed0c435eb025706 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf5a07a5a9e583e4ff2e4c27fd46d1fd = $(`<div id="html_cf5a07a5a9e583e4ff2e4c27fd46d1fd" style="width: 100.0%; height: 100.0%;">Nearest Bus Stop</div>`)[0];
+                popup_c1f44efd0f8d50d79ed0c435eb025706.setContent(html_cf5a07a5a9e583e4ff2e4c27fd46d1fd);
+            
+        
+
+        marker_951cb8e9690370e5e31b28230c01294d.bindPopup(popup_c1f44efd0f8d50d79ed0c435eb025706)
+        ;
+
+        
+    
+    
+            var poly_line_3f0501e6eb4fc53a882bdbcb3e4794bd = L.polyline(
+                [[38.89867, -77.21149], [38.89847, -77.21163], [38.89813, -77.21181], [38.89753, -77.21212], [38.897380000000005, -77.21221], [38.89607, -77.21312999999999], [38.89582, -77.21328], [38.89519000000001, -77.21166], [38.89519000000001, -77.21158], [38.8952, -77.21135], [38.895230000000005, -77.21038], [38.89524, -77.21007], [38.89524, -77.20988], [38.895250000000004, -77.20943], [38.895300000000006, -77.20876], [38.89535, -77.20855], [38.895480000000006, -77.20824], [38.89584000000001, -77.20751], [38.89612, -77.20698999999999], [38.8965, -77.2063], [38.89663, -77.20609], [38.897090000000006, -77.20648], [38.897740000000006, -77.20705], [38.89782, -77.20689999999999], [38.89804, -77.20656], [38.898160000000004, -77.20643], [38.89828000000001, -77.20634], [38.89842, -77.20626], [38.898860000000006, -77.20607], [38.89887, -77.20607], [38.900240000000004, -77.2055], [38.900360000000006, -77.20604], [38.90037, -77.20609], [38.90023, -77.20616], [38.90037, -77.20667999999999], [38.90034, -77.20667999999999], [38.900200000000005, -77.20679], [38.90016000000001, -77.20685], [38.89996, -77.20754], [38.90016000000001, -77.20801], [38.900290000000005, -77.20833], [38.90075, -77.20943], [38.90052, -77.20966], [38.90054000000001, -77.20979]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+        var popup_bbc18d99bd9a33cf1d2d1905954a84c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_454c2d4739767c6890224ee74fe3b48a = $(`<div id="html_454c2d4739767c6890224ee74fe3b48a" style="width: 100.0%; height: 100.0%;">Adjusted Route to Start Bike Station</div>`)[0];
+                popup_bbc18d99bd9a33cf1d2d1905954a84c1.setContent(html_454c2d4739767c6890224ee74fe3b48a);
+            
+        
+
+        poly_line_3f0501e6eb4fc53a882bdbcb3e4794bd.bindPopup(popup_bbc18d99bd9a33cf1d2d1905954a84c1)
+        ;
+
+        
+    
+    
+            var poly_line_73a2167fe50f1c3112ce49da722364ec = L.polyline(
+                [[38.90044, -77.20989], [38.90042, -77.20976], [38.90065, -77.20953], [38.90019, -77.20843], [38.90006, -77.20811], [38.89986, -77.20764], [38.90006, -77.20695], [38.9001, -77.20689], [38.90024, -77.20678], [38.90027, -77.20678], [38.90013, -77.20626], [38.90027, -77.20619], [38.90026, -77.20614], [38.90014, -77.2056], [38.90063, -77.2054]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+        var popup_dcf116cbd3f674495de22e41cb10f31c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7cc6c070fb829d53dd9019b4445b6bf = $(`<div id="html_f7cc6c070fb829d53dd9019b4445b6bf" style="width: 100.0%; height: 100.0%;">Route Between Bike Stations</div>`)[0];
+                popup_dcf116cbd3f674495de22e41cb10f31c.setContent(html_f7cc6c070fb829d53dd9019b4445b6bf);
+            
+        
+
+        poly_line_73a2167fe50f1c3112ce49da722364ec.bindPopup(popup_dcf116cbd3f674495de22e41cb10f31c)
+        ;
+
+        
+    
+    
+            var poly_line_f80cc60245c72698b39ac2f6af9b5ec1 = L.polyline(
+                [[38.90063, -77.2054], [38.90096, -77.20526], [38.90118, -77.20515], [38.90137, -77.205], [38.90145, -77.20492], [38.90165, -77.20464], [38.90177, -77.20446], [38.90199, -77.20413], [38.90209, -77.20382], [38.90213, -77.20357], [38.90217, -77.20343], [38.90227, -77.20321], [38.90233, -77.20281], [38.90232, -77.20266], [38.90228, -77.20251], [38.90219, -77.20229], [38.90126, -77.20079], [38.90063, -77.19974], [38.90043, -77.19944], [38.9001, -77.19912], [38.89999, -77.19907], [38.89975, -77.19903], [38.89964, -77.19903], [38.89936, -77.1991], [38.89832, -77.19947], [38.89787, -77.19969], [38.89771, -77.19981], [38.89744, -77.20005], [38.89721, -77.20031], [38.89684, -77.20077], [38.89576, -77.2027], [38.89533, -77.20342], [38.89059, -77.21164], [38.8896, -77.21362], [38.88936, -77.21409], [38.8893, -77.21425], [38.88924, -77.21444], [38.88922, -77.21465], [38.88921, -77.21491], [38.88923, -77.21506], [38.8893, -77.21538], [38.88935, -77.21556], [38.88961, -77.21615], [38.8897, -77.21638], [38.88977, -77.21668], [38.88982, -77.21705], [38.88982, -77.21732], [38.88979, -77.2176], [38.88975, -77.21787], [38.88968, -77.21811], [38.88961, -77.21832], [38.88945, -77.21873], [38.88919, -77.21913], [38.88855, -77.2199], [38.88808, -77.22039], [38.88777, -77.22066], [38.88736, -77.22098], [38.88689, -77.2213], [38.88615, -77.2217], [38.88546, -77.22199], [38.885, -77.22209], [38.884, -77.22221], [38.88309, -77.22221], [38.88263, -77.22219], [38.88151, -77.22203], [38.88057, -77.22183], [38.87528, -77.22056], [38.87439, -77.22039], [38.87364, -77.22033], [38.87167, -77.22028], [38.86979, -77.22028], [38.8661, -77.22024], [38.86547, -77.22023], [38.85968, -77.2202], [38.85891, -77.2202], [38.85692, -77.2201], [38.85554, -77.22011], [38.85406, -77.2201], [38.85394, -77.22015], [38.85382, -77.22019], [38.8539, -77.22007], [38.85397, -77.22002], [38.85402, -77.22001], [38.85663, -77.22003], [38.85721, -77.22001], [38.85834, -77.21992], [38.86142, -77.22002], [38.86357, -77.22007], [38.86548, -77.22006], [38.86611, -77.22006], [38.86881, -77.22003], [38.87193, -77.22001], [38.87347, -77.21998], [38.8742, -77.22003], [38.87454, -77.22008], [38.875, -77.22017], [38.87635, -77.22048], [38.87822, -77.22096], [38.8799, -77.22151], [38.88051, -77.22163], [38.8809, -77.22168], [38.88192, -77.22177], [38.88242, -77.22181], [38.88351, -77.22199], [38.88376, -77.222], [38.88434, -77.22198], [38.88453, -77.22192], [38.88471, -77.22183], [38.88506, -77.22153], [38.88518, -77.22136], [38.88531, -77.22115], [38.8855, -77.22072], [38.88576, -77.22003], [38.88603, -77.21937], [38.88731, -77.21681], [38.88767, -77.21605], [38.88806, -77.21533], [38.889, -77.21366], [38.89281, -77.20708], [38.89334, -77.20615], [38.89417, -77.20464], [38.89465, -77.20385], [38.89634, -77.20092], [38.89701, -77.19976], [38.89784, -77.19831], [38.89799, -77.19805], [38.89862, -77.19694], [38.89886, -77.19649], [38.89909, -77.19596], [38.89934, -77.19536], [38.89965, -77.19451], [38.89992, -77.19361], [38.90016, -77.19259], [38.90034, -77.19152], [38.90045, -77.19052], [38.90051, -77.18921], [38.90051, -77.1891]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+        var popup_e5e90e99f1cf7bfdb2b8fde256967744 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03ebedc7edc6514e46e98f1da6bed273 = $(`<div id="html_03ebedc7edc6514e46e98f1da6bed273" style="width: 100.0%; height: 100.0%;">Route to Nearest Metro Station</div>`)[0];
+                popup_e5e90e99f1cf7bfdb2b8fde256967744.setContent(html_03ebedc7edc6514e46e98f1da6bed273);
+            
+        
+
+        poly_line_f80cc60245c72698b39ac2f6af9b5ec1.bindPopup(popup_e5e90e99f1cf7bfdb2b8fde256967744)
+        ;
+
+        
+    
+    
+            var poly_line_adf8147900facbc61e8c22287cc1b67b = L.polyline(
+                [[38.90063, -77.2054], [38.90096, -77.20526], [38.90118, -77.20515], [38.90137, -77.205], [38.90145, -77.20492], [38.90165, -77.20464], [38.90177, -77.20446], [38.90199, -77.20413], [38.9021, -77.20425], [38.90237, -77.2045], [38.90248, -77.20461], [38.9026, -77.20473], [38.90273, -77.20485], [38.90282, -77.20493], [38.90291, -77.20492], [38.90334, -77.20416], [38.90341, -77.20404], [38.90327, -77.20388]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_198e1167e09acc3be3b9d45fd9faa48d);
+        
+    
+        var popup_bba974c3f6e21b109b35f6df3c8688b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04024d371db7bef6dc0820eae248bfa6 = $(`<div id="html_04024d371db7bef6dc0820eae248bfa6" style="width: 100.0%; height: 100.0%;">Route to Nearest Bus Stop</div>`)[0];
+                popup_bba974c3f6e21b109b35f6df3c8688b9.setContent(html_04024d371db7bef6dc0820eae248bfa6);
+            
+        
+
+        poly_line_adf8147900facbc61e8c22287cc1b67b.bindPopup(popup_bba974c3f6e21b109b35f6df3c8688b9)
+        ;
+
+        
+    
+</script>
+</html>
